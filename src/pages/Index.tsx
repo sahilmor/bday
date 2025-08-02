@@ -1,11 +1,17 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import BirthdayWishes from '@/components/BirthdayWishes';
+import MusicPlayer from '@/components/MusicPlayer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen flex">
+      {/* Left Side - Birthday Wishes */}
+      <div className="flex-1 relative overflow-hidden">
+        <BirthdayWishes />
+      </div>
+      
+      {/* Right Side - Music Player */}
+      <div className="flex-1 relative">
+        <MusicPlayer />
       </div>
     </div>
   );

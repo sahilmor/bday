@@ -61,6 +61,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				birthday: {
+					pink: 'hsl(var(--birthday-pink))',
+					purple: 'hsl(var(--birthday-purple))',
+					gold: 'hsl(var(--birthday-gold))',
+					light: 'hsl(var(--birthday-light))'
 				}
 			},
 			borderRadius: {
@@ -84,11 +90,36 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				float: {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				pulseHeart: {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.1)' }
+				},
+				sparkle: {
+					'0%, 100%': { opacity: '1', transform: 'scale(1)' },
+					'50%': { opacity: '0.7', transform: 'scale(1.2)' }
+				},
+				fadeInUp: {
+					from: { opacity: '0', transform: 'translateY(30px)' },
+					to: { opacity: '1', transform: 'translateY(0)' }
+				},
+				spin: {
+					from: { transform: 'rotate(0deg)' },
+					to: { transform: 'rotate(360deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-heart': 'pulseHeart 2s ease-in-out infinite',
+				'sparkle': 'sparkle 2s linear infinite',
+				'fade-in-up': 'fadeInUp 0.6s ease-out',
+				'spin-slow': 'spin 3s linear infinite'
 			}
 		}
 	},
