@@ -119,7 +119,11 @@ export default {
 				'pulse-heart': 'pulseHeart 2s ease-in-out infinite',
 				'sparkle': 'sparkle 2s linear infinite',
 				'fade-in-up': 'fadeInUp 0.6s ease-out',
-				'spin-slow': 'spin 3s linear infinite'
+				'spin-slow': 'spin 3s linear infinite',
+				'spin-very-slow': 'spin 10s linear infinite'
+			},
+			boxShadow: {
+				music: '0 10px 30px rgba(0,0,0,0.15)',
 			}
 		}
 	},

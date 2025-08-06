@@ -7,9 +7,8 @@ import FloatingNavigation from "@/components/FloatingNavigation";
 import Index from "./pages/Index";
 import Gallery from "./pages/Gallery";
 import Music from "./pages/Music";
-import Memories from "./pages/Memories";
-import Wishes from "./pages/Wishes";
 import NotFound from "./pages/NotFound";
+import LetterPage from "./pages/Letter";
 
 const queryClient = new QueryClient();
 
@@ -23,9 +22,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/music" element={<Music />} />
-            <Route path="/memories" element={<Memories />} />
-            <Route path="/wishes" element={<Wishes />} />
+            <Route path="/letter" element={<LetterPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
